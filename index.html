@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻摘要归档</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .archive-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            border-left: 4px solid #667eea;
+        }
+
+        .archive-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .archive-date {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .archive-label {
+            color: #718096;
+            font-size: 0.9em;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            margin-top: 30px;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📰 新闻摘要归档</h1>
+            <p>每日更新的新闻聚合与摘要</p>
+        </header>
+
+        <main class="content">
+            <h2 style="margin-bottom: 30px; color: #2d3748;">📅 历史记录</h2>
+            <!-- ARCHIVE_ITEMS -->
+
+        <div class="archive-item">
+            <a href="2026-03-16/" class="archive-date">2026-03-16</a>
+            <span class="archive-label">查看当日报表</span>
+        </div>
+
+            
+        </main>
+
+        <footer class="footer">
+            <p>由 <a href="https://github.com/openclaw/openclaw">OpenClaw AI</a> 自动生成</p>
+        </footer>
+    </div>
+</body>
+</html>
